@@ -38,7 +38,7 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // Always add semicolon
-    'semi': 'always',
+    'semi': [2, 'always'],
     {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
     // don't require .vue extension when importing

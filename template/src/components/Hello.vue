@@ -1,3 +1,8 @@
+{{#doc}}
+<docs>
+  ### Hello component
+</docs>
+{{/doc}}
 <template>
   <div class="hello">
     <h1>\{{ msg }}</h1>
