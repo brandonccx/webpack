@@ -44,6 +44,27 @@ module.exports = {
       "type": "confirm",
       "message": "Install vue-router?"
     },
+    "store": {
+      "type": "confirm",
+      "message": "Install vuex for state management?"
+    },
+    "uiLib": {
+      "type": "list",
+      "message": "Which UI library do you want to install?",
+      "choices": [
+        //TODO: Add more UI libraries
+        {
+          "name": "iview (https://www.iviewui.com/docs/guide/install)",
+          "value": "iview",
+          "short": "iview"
+        },
+        {
+          "name": "none (will not install any lib)",
+          "value": "none",
+          "short": "none"
+        }
+      ]
+    },
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code?"
@@ -54,7 +75,7 @@ module.exports = {
       "message": "Pick an ESLint preset",
       "choices": [
         {
-          "name": "Standard (https://github.com/feross/standard)",
+          "name": "Standard (with semi-always) (https://github.com/feross/standard)",
           "value": "standard",
           "short": "Standard"
         },
@@ -77,6 +98,10 @@ module.exports = {
     "e2e": {
       "type": "confirm",
       "message": "Setup e2e tests with Nightwatch?"
+    },
+    "doc": {
+      "type": "confirm",
+      "message": "Use document builder?"
     }
   },
   "filters": {
@@ -86,7 +111,8 @@ module.exports = {
     "test/unit/**/*": "unit",
     "build/webpack.test.conf.js": "unit",
     "test/e2e/**/*": "e2e",
-    "src/router/**/*": "router"
+    "src/router/**/*": "router",
+    "build/doc-server.js": 'doc'
   },
   "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
 };
