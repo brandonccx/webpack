@@ -112,6 +112,7 @@ module.exports = {
     "build/webpack.test.conf.js": "unit",
     "test/e2e/**/*": "e2e",
     "src/router/**/*": "router",
+    "src/store/**/*": "store",
     "build/doc-server.js": 'doc',
     "build/markdown-loader.js": 'doc'
   },

@@ -32,6 +32,7 @@ yarn run e2e
 yarn run test
 {{/if_or}}
 {{#doc}}
+
 # build documents by `yarn run build`
 # open documents
 yarn run doc
