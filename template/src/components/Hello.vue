@@ -1,7 +1,7 @@
 {{#doc}}
-<docs>
+<doc>
   ### Hello component
-</docs>
+</doc>
 {{/doc}}
 <template>
   <div class="hello">

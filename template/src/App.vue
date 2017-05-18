@@ -1,3 +1,8 @@
+{{#doc}}
+<doc>
+  ### The main component for app
+</doc>
+{{/doc}}
 <template>
   <div id="app">
     <img src="./assets/logo.png">

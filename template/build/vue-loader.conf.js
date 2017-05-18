@@ -14,7 +14,7 @@ var loaders = utils.cssLoaders({
 
 {{#doc}}
 if (isProduction) {
-  loaders.docs = [{
+  loaders.doc = [{
     loader: 'file-loader',
     options: {
       name: '../docs/[path][name].html',
