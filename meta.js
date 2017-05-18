@@ -75,7 +75,8 @@ module.exports = {
     },
     "e2e": {
       "type": "confirm",
-      "message": "Setup e2e tests with Nightwatch?"
+      "message": "Setup e2e tests with Nightwatch?",
+      "default": false
     },
     "doc": {
       "type": "confirm",
