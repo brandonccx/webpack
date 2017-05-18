@@ -59,8 +59,8 @@ module.exports = {
           "short": "iview"
         },
         {
-          "name": "none (will not install any lib)",
-          "value": "none",
+          "name": "<none> (will not install any lib)",
+          "value": "",
           "short": "none"
         }
       ]
@@ -92,8 +92,19 @@ module.exports = {
     "test/e2e/**/*": "e2e",
     "src/router/**/*": "router",
     "src/store/**/*": "store",
-    "build/doc-server.js": 'doc',
-    "build/markdown-loader.js": 'doc'
+    "build/doc-server.js": "doc",
+    "build/markdown-loader.js": "doc"
   },
-  "completeMessage": "To get started:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
+  "completeMessage": [
+    "Start development:\n\n",
+    "  {{^inPlace}}cd {{destDirName}}\n",
+    "  {{/inPlace}}yarn install\n",
+    "  yarn run dev\n\n",
+    "Or with production and documents:\n\n",
+    "  yarn run build\n",
+    "  yarn run doc\n\n",
+    "And for test:\n\n",
+    "  yarn run test\n\n",
+    "Documentation can be found at https://vuejs-templates.github.io/webpack"
+  ].join('')
 };

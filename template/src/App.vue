@@ -27,6 +27,12 @@ export default {
 };
 </script>
 
+{{#if_eq uiLib "iview"}}
+<style lang="less">
+@import './style/theme/default.less';
+</style>
+
+{{/if_eq}}
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

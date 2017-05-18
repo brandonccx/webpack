@@ -7,9 +7,16 @@ import App from './App';
 {{#router}}
 import router from './router';
 {{/router}}
+{{#if_eq uiLib "iview"}}
+import iView from 'iview';
+{{/if_eq}}
 
 Vue.config.productionTip = false;
 
+{{#if_eq uiLib "iview"}}
+Vue.use(iView);
+
+{{/if_eq}}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
