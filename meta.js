@@ -65,6 +65,22 @@ module.exports = {
         }
       ]
     },
+    "css": {
+      "type": "list",
+      "message": "Which CSS preprocessor do you want to use?",
+      "choices": [
+        {
+          "name": "cssnext (postcss)",
+          "value": "cssnext",
+          "short": "cssnext"
+        },
+        {
+          "name": "<none> (I want to install myself)",
+          "value": "",
+          "short": "none"
+        }
+      ]
+    },
     "lint": {
       "type": "confirm",
       "message": "Use ESLint to lint your code? Standard (with semi-always) (https://github.com/feross/standard)"
