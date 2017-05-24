@@ -4,7 +4,9 @@ module.exports = {
   "plugins": {
     // to edit target browsers: use "browserlist" field in package.json
     {{#if_eq css "cssnext"}}
-    "postcss-import": {},
+    "postcss-import": {
+      path: [path.resolve(__dirname, 'src/style')]
+    },
     "postcss-cssnext": {}
     {{else}}
     "autoprefixer": {}
