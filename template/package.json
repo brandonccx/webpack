@@ -95,6 +95,7 @@
     {{#if_eq css "cssnext"}}
     "postcss-cssnext": "^2.11.0",
     "postcss-import": "^10.0.0",
+    "postcss-mixins": "^6.0.0",
     {{/if_eq}}
     "rimraf": "^2.6.0",
     "url-loader": "^0.5.8",

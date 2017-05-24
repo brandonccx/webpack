@@ -7,6 +7,7 @@ module.exports = {
     "postcss-import": {
       path: [path.resolve(__dirname, 'src/style')]
     },
+    "postcss-mixins": {},
     "postcss-cssnext": {}
     {{else}}
     "autoprefixer": {}
